@@ -11,8 +11,51 @@
             rel="stylesheet"
             href="./dist/output.css" />
     </head>
-    <body>
-        <h1>hello this is a practice.</h1>
+    <body class="bg-red-600 font-mono">
+        <div>
+            <div class="relative z-[100]">
+                <nav class="h-16 w-[100%] fixed left-0 bg-black text-white">
+                    <div class="flex justify-between items-center px-10">
+                        <div class="w-[33%]">
+                            <img
+                                src="./img/marvel-logo.png"
+                                class="h-16"
+                                alt="Marvel logo" />
+                        </div>
+                        <div class="w-[33%]">
+                            <span class="font-bold text-4xl  ">marvel.com</span>
+                        </div>
+
+                        <div  class="flex jutify justify-between items-center w-[25%]">
+                            <button class="" type="button">Favourite</buttoncla>
+                            <button type="button">Superheros</button>
+                            <button type="button" class="w-6">
+                                <img src="./img/icons8-search-50.png" alt="Search">
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container relative">
+                <div
+                    id="home"
+                    class="absolute z-50">
+                </div>
+                <div
+                    id="favourite"
+                    class="absolute z-30">
+                </div>
+                <div
+                    id="superheros"
+                    class="absolute z-20">
+                </div>
+                <div id = "search">                    
+                </div>
+                
+            </div>
+        </div>
+
         <script src="./script/script.js"></script>
     </body>
 </html>
