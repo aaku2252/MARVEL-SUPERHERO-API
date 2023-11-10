@@ -23,7 +23,11 @@
                                 alt="Marvel logo" />
                         </div>
                         <div class="md:w-[33%] w-0 overflow-hidden">
-                            <span class="font-bold text-4xl">marvel.com</span>
+                            <a
+                                href="./index.html"
+                                class="font-bold text-4xl"
+                                >marvel.com</a
+                            >
                         </div>
 
                         <div
@@ -36,7 +40,8 @@
                             <button type="button">Superheros</button>
                             <button
                                 type="button"
-                                class="w-6">
+                                class="w-6"
+                                id="search-btn">
                                 <img
                                     src="./img/icons8-search-50.png"
                                     alt="Search" />
@@ -56,82 +61,123 @@
                             <input
                                 type="text"
                                 class="rounded-l-3xl w-[400px] h-[2.5rem] p-4 outline-none"
-                                placeholder="search for superhero" />
+                                placeholder="search for superhero"
+                                id="search-bar" />
                             <button
                                 type="button "
-                                class="h-[2.5rem] w-12 bg-black rounded-r-3xl px-2">
+                                class="h-[2.5rem] w-12 bg-black rounded-r-3xl px-2"
+                                id="search-bar-btn">
                                 <img
                                     src="./img/icons8-search-50.png"
                                     class="h-[1.5rem]"
                                     alt="" />
                             </button>
                         </div>
-                        <div class="flex flex-wrap justify-around">
+                        <div
+                            id="home_cardbox"
+                            class="flex invisible flex-wrap justify-around">
                             <div
-                                class="w-[200px] rounded-2xl border-2 shadow-2xl overflow-hidden m-4">
+                                class="w-[200px] rounded-2xl border-2 shadow-2xl overflow-hidden m-4 card">
                                 <img
-                                    src="./img/dummy pic.jpg"
+                                    src="./img/marvel-logo.png"
                                     alt=""
                                     class="w-[100%] h-[100px] object-cover object-center" />
                                 <div class="p-4">
-                                    <p class="font-bold text-2xl mb-4">
-                                        Iron Man
-                                    </p>
-                                    <p class="leading-5">
-                                        Lorem ipsum dolor sit amet Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing
-                                        elit.
-                                    </p>
+                                    <p
+                                        class="font-bold text-2xl mb-4"
+                                        id="home_name-1"></p>
+                                    <p
+                                        class="leading-5 line-clamp-5"
+                                        id="home_des-1"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="w-[200px] rounded-2xl border-2 shadow-2xl overflow-hidden m-4">
+                                class="w-[200px] rounded-2xl border-2 shadow-2xl overflow-hidden m-4 card">
                                 <img
-                                    src="./img/dummy pic.jpg"
+                                    src="./img/marvel-logo.png"
                                     alt=""
                                     class="w-[100%] h-[100px] object-cover object-center" />
                                 <div class="p-4">
-                                    <p class="font-bold text-2xl mb-4">
-                                        Iron Man
-                                    </p>
-                                    <p class="leading-5">
-                                        Lorem ipsum dolor sit amet Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing
-                                        elit.
-                                    </p>
+                                    <p
+                                        class="font-bold text-2xl mb-4"
+                                        id="home_name-2"></p>
+                                    <p
+                                        class="leading-5 line-clamp-5"
+                                        id="home_des-2"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="w-[200px] rounded-2xl border-2 shadow-2xl overflow-hidden m-4">
+                                class="w-[200px] rounded-2xl border-2 shadow-2xl overflow-hidden m-4 card">
                                 <img
-                                    src="./img/dummy pic.jpg"
+                                    src="./img/marvel-logo.png"
                                     alt=""
                                     class="w-[100%] h-[100px] object-cover object-center" />
                                 <div class="p-4">
-                                    <p class="font-bold text-2xl mb-4">
-                                        Iron Man
-                                    </p>
-                                    <p class="leading-5">
-                                        Lorem ipsum dolor sit amet Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing
-                                        elit.
-                                    </p>
+                                    <p
+                                        class="font-bold text-2xl mb-4"
+                                        id="home_name-3"></p>
+                                    <p
+                                        class="leading-5 line-clamp-5"
+                                        id="home_des-3"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    id="favourite"
-                    class="absolute z-30"></div>
+
                 <div
                     id="superheros"
-                    class="absolute z-20"></div>
-                <div id="search"></div>
+                    class="absolute invisible w-[100%] top-16 z-20 flex justify-center items-center">
+                    <div
+                        class="border-2 relative h-[400px] w-[500px] rounded-2xl bg-white overflow-hidden px-8 py-6">
+                        <div class="flex items-center mb-3">
+                            <img
+                                src="./img/marvel-logo.png"
+                                alt=""
+                                class="w-[100px] h-[100px] object-contain rounded-[50%]" />
+                            <span
+                                id="superheros_name"
+                                class="mx-4 font-bold text-4xl"
+                                >Iron Man</span
+                            >
+                            <button
+                                type="button"
+                                id="button"
+                                class="font-bold ml-auto text-2xl absolute right-0 top-0 mr-4 mt-6">
+                                X
+                            </button>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="text-2xl font-semibold">Description</h1>
+                            <p
+                                id="superheros_description"
+                                class="line-clamp-3">
+                                Lorem ipsum, dolor sit amet consect etur adipis
+                                icing elit. Lorem ipsum, Lorem ipsum, dolor sit
+                                amet consect etur adipis icing elit. Lorem
+                                ipsum,
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="text-2xl font-semibold">Series</h1>
+                            <p
+                                id="superheros_series"
+                                class="line-clamp-1"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="text-2xl font-semibold">Comics</h1>
+                            <p
+                                id="superheros_comics"
+                                class="line-clamp-1"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+        <script src="//unpkg.com/string-similarity@4.0.1/umd/string-similarity.min.js"></script>
 
         <script src="./script/script.js"></script>
     </body>
