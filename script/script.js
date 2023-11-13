@@ -1,5 +1,5 @@
-const privateKey = "93df6da721fb7bb2cc48781c5545a5a04848b44e";
-const publicKey = "d7cb7d751f1fa9ea10240d6905c9062e";
+const privateKey = "";
+const publicKey = "";
 let ts = new Date().getTime();
 
 function generateMD5Hash(data) {
